@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentCare Now — Analytics April 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F8FAFC; color: #1E293B; font-size: 14px; line-height: 1.5; }
+  .header { background: #0E7490; color: #fff; padding: 20px 24px 16px; }
+  .header h1 { font-size: 20px; font-weight: 700; }
+  .header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 2px; }
+  .logo { font-size: 11px; opacity: 0.7; margin-top: 8px; letter-spacing: .05em; text-transform: uppercase; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.07); }
+  .card.full { grid-column: 1 / -1; }
+  .card h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: #64748B; margin-bottom: 12px; }
+  .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #F1F5F9; }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-label { color: #64748B; font-size: 13px; }
+  .stat-value { font-weight: 600; font-size: 14px; }
+  .na { color: #CBD5E1; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; letter-spacing: .05em; padding: 0 0 8px; border-bottom: 1px solid #E2E8F0; }
+  td { padding: 8px 0; border-bottom: 1px solid #F1F5F9; font-size: 13px; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+  .badge-green { background: #D1FAE5; color: #065F46; }
+  .badge-red { background: #FEE2E2; color: #991B1B; }
+  .badge-gray { background: #F1F5F9; color: #64748B; }
+  .score-big { font-size: 40px; font-weight: 800; color: #0E7490; line-height: 1; }
+  .score-label { font-size: 13px; color: #64748B; margin-top: 4px; }
+  .score-bar { height: 8px; background: #E2E8F0; border-radius: 4px; margin-top: 12px; overflow: hidden; }
+  .score-fill { height: 100%; background: #0E7490; border-radius: 4px; transition: width .3s; }
+  .review-card { background: #F8FAFC; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .review-stars { color: #F59E0B; font-size: 14px; margin-bottom: 4px; }
+  .review-text { font-size: 13px; color: #1E293B; }
+  .review-date { font-size: 11px; color: #64748B; margin-top: 6px; }
+  .gbp-score { display: flex; align-items: baseline; gap: 6px; }
+  .gbp-score .big { font-size: 32px; font-weight: 800; color: #0E7490; }
+  .gbp-score .stars { color: #F59E0B; font-size: 16px; }
+  .footer { padding: 16px 24px; font-size: 11px; color: #64748B; border-top: 1px solid #E2E8F0; background: #fff; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DentCare Now</h1>
+  <div class="subtitle">Monthly Analytics Report — April 2026</div>
+  <div class="logo">Digital Floss</div>
+</div>
+
+<div class="grid">
+
+  <!-- AI Visibility Score -->
+  <div class="card">
+    <h2>AI Search Visibility</h2>
+    <div class="score-big">0</div>
+    <div class="score-label">0 / 3 AI engines</div>
+    <div class="score-bar"><div class="score-fill" style="width:0%"></div></div>
+    <table style="margin-top:14px">
+      <tbody>
+        <tr><td>Claude (Anthropic)</td><td><span class="badge badge-red">Not found ✗</span></td></tr>
+<tr><td>ChatGPT (OpenAI)</td><td><span class="badge badge-red">Not found ✗</span></td></tr>
+<tr><td>Perplexity</td><td><span class="badge badge-gray">Not set up</span></td></tr>
+<tr><td>Gemini (Google)</td><td><span class="badge badge-red">Not found ✗</span></td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:11px;color:#64748B;margin-top:10px;font-style:italic">Prompt: "Who are the top dentists in Fairfax, Virginia? Please list the best options with their names and any notable details."</div>
+  </div>
+
+  <!-- Google Business Profile -->
+  <div class="card">
+    <h2>Google Business Profile</h2>
+    <div class="gbp-score"><span class="big">4.7</span><span class="stars">★</span></div>
+    <div style="margin:8px 0 14px;font-size:13px;color:#64748B">697 total reviews</div>
+    <h2 style="margin-top:4px">Recent Reviews</h2>
+    
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">So happy to have found a dentist willing to see me on a Sunday after hitting my mouth on the pavement the day before. The staff and the dentist were wonderful.</p>
+      <div class="review-date">2026-05-26</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">I always have a great experience at Dentcare from start to finish. The staff was welcoming, professional, and made me feel comfortable the entire visit. The office is clean, modern, and well-organized…</p>
+      <div class="review-date">2026-05-21</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text"></p>
+      <div class="review-date">2026-05-17</div>
+    </div>
+  </div>
+
+  <!-- Social Performance -->
+  <div class="card full">
+    <h2>Social Performance (Last 30 Days)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Reach</th>
+          <th>Impressions</th>
+          <th>Engagement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="4" class="na">No social data yet</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Website Traffic -->
+  <div class="card">
+    <h2>Website Traffic (GA4)</h2>
+    <div class="stat-row"><span class="stat-label">Sessions</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Users</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Bounce Rate</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Avg. Session</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Top Source</span><span class="stat-value"><span class="na">—</span></span></div>
+    <p class="na" style="margin-top:10px;font-size:12px">GA4 setup pending — contact your CSM</p>
+  </div>
+
+  <!-- SEO -->
+  <div class="card">
+    <h2>Search Rankings (SEMrush)</h2>
+    <div class="stat-row"><span class="stat-label">Est. Organic Traffic</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Keywords (Top 10)</span><span class="stat-value">—</span></div>
+    <div class="stat-row"><span class="stat-label">Domain</span><span class="stat-value"><span class="na">—</span></span></div>
+    <p class="na" style="margin-top:10px;font-size:12px">SEO data pending</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  Report generated May 28, 2026 by Digital Floss · Reports update monthly
+</div>
+
+</body>
+</html>
